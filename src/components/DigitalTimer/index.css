@@ -1,0 +1,221 @@
+.bg-container {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #cffcf1,
+    #cffcf1,
+    #defafe
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.heading {
+  color: #1e293b;
+  font-size: 32px;
+  font-family: 'Roboto';
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.digital-timer-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  height: 350px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container {
+  background-color: #ffffff;
+  padding: 25px;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  color: #00d9f5;
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.paused {
+  color: #0f172a;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.play-icon {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.start-reset-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+}
+
+.start {
+  color: #0f172a;
+  font-size: 22px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.set-timer-limit {
+  color: #0f172a;
+  font-size: 17px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.decrease {
+  color: #0f172a;
+  font-size: 30px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.timer-value {
+  background-image: linear-gradient(to right, #00f5a0, #00d9f5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 70px;
+  border-radius: 7px;
+  color: #0f172a;
+  font-size: 22px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.start-reset-timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-change-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-container {
+    background-image: linear-gradient(
+      to right,
+      #ffffff,
+      #cffcf1,
+      #cffcf1,
+      #defafe
+    );
+  }
+
+  .heading {
+    font-size: 48px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+  }
+
+  .digital-timer-container {
+    height: 450px;
+    width: 500px;
+  }
+
+  .timer-container {
+    padding: 25px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .timer {
+    font-size: 35px;
+  }
+
+  .paused {
+    font-size: 20px;
+  }
+
+  .play-icon {
+    height: 35px;
+    margin-right: 15px;
+  }
+
+  .start-reset-container {
+    width: 300px;
+  }
+
+  .start {
+    font-size: 30px;
+  }
+
+  .set-timer-limit {
+    margin-top: 35px;
+    font-size: 16px;
+  }
+
+  .decrease {
+    font-size: 35px;
+  }
+
+  .timer-value {
+    height: 60px;
+    width: 100px;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .start-reset-timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timer-change-container {
+    width: 200px;
+  }
+}
